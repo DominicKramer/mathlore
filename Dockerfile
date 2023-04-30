@@ -1,11 +1,11 @@
 FROM alpine
 
 # the version of the mlg executable to use
-ARG MLG_VERSION=0.20.0
+ARG MLG_VERSION=0.21.0
 
 # the commit SHA in https://github.com/mathlingua/mathlore-content
 # of the content to use
-ARG MATHLORE_SHA=384baf049df2d6967c05ca32c124c8ba483bd7b8
+ARG MATHLORE_SHA=a782917763cb94aac2d3ed5e9a99c8ba0c095e57
 
 WORKDIR /app
 
