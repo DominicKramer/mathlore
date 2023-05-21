@@ -5,7 +5,7 @@ ARG MLG_VERSION=0.21.0
 
 # the commit SHA in https://github.com/mathlingua/mathlore-content
 # of the content to use
-ARG MATHLORE_SHA=27aea99f6694af4262f2f34c4e7039016e0a58ef
+ARG MATHLORE_SHA=6eabe82dc5f9318e8b6ca3f63ddacd6b52addd01
 
 WORKDIR /app
 
