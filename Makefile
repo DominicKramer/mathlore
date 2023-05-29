@@ -3,6 +3,10 @@
 dev:
 	./scripts/build.sh
 
+.PONY: update
+update:
+	./scripts/update-dockerfile.sh
+
 .PHONY: deploy
 deploy:
 	flyctl deploy
