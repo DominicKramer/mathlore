@@ -1,5 +1,5 @@
 # use the x86-64 platform since the x86-64 version of Node.js is used
-FROM --platform=linux/amd64 golang:1.20
+FROM --platform=linux/amd64 golang:1.22
 
 # install unzip and xz-utils so that the downloaded content can be extracted
 RUN apt-get update && apt-get install unzip xz-utils
@@ -7,10 +7,10 @@ RUN apt-get update && apt-get install unzip xz-utils
 ##################################### install Node.js ##############################################
 WORKDIR /app
 
-RUN wget https://nodejs.org/dist/v18.16.0/node-v18.16.0-linux-x64.tar.xz
-RUN tar -xf node-v18.16.0-linux-x64.tar.xz
+RUN wget https://nodejs.org/dist/v20.11.0/node-v20.11.0-linux-x64.tar.xz
+RUN tar -xf node-v20.11.0-linux-x64.tar.xz
 
-ENV PATH="${PATH}:/app/node-v18.16.0-linux-x64/bin"
+ENV PATH="${PATH}:/app/node-v20.11.0-linux-x64/bin"
 
 ######################################### install yarn #############################################
 
