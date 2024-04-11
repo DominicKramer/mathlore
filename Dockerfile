@@ -21,7 +21,7 @@ RUN npm install --global yarn
 WORKDIR /app
 
 # the commit SHA in https://github.com/mathlingua/mathlingua to use
-ARG MATHLINGUA_SHA=3eb4dfe8c7fdc415b893437d0dedf57164f52e02
+ARG MATHLINGUA_SHA=039ec4cd6832365d21cfb49199a6396f2a55a73f
 
 RUN wget https://github.com/mathlingua/mathlingua/archive/${MATHLINGUA_SHA}.zip
 RUN unzip ${MATHLINGUA_SHA}.zip
