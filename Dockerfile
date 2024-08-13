@@ -21,7 +21,7 @@ RUN npm install --global yarn
 WORKDIR /app
 
 # the commit SHA in https://github.com/mathlingua/mathlingua to use
-ARG MATHLINGUA_SHA=8e7e16abc999c0896eadcc14bac964bfbea81f0b
+ARG MATHLINGUA_SHA=9e6bf6d59bb05fb59160ab82a1078a618134f525
 
 RUN wget https://github.com/mathlingua/mathlingua/archive/${MATHLINGUA_SHA}.zip
 RUN unzip ${MATHLINGUA_SHA}.zip
@@ -45,7 +45,7 @@ WORKDIR /app
 
 # the commit SHA in https://github.com/mathlingua/mathlore-content
 # of the content to use
-ARG MATHLORE_SHA=8fa860b5e7fb82c7e08659d6b1ef02f8eedff5f0
+ARG MATHLORE_SHA=0c32f582cf70baad0d2d021aa56a09fbad33eac5
 
 # download and extract the Mathlore content
 RUN wget https://github.com/mathlingua/mathlore-content/archive/${MATHLORE_SHA}.zip
